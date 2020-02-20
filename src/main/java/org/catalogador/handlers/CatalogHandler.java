@@ -1,7 +1,7 @@
 package org.catalogador.handlers;
 
 import lombok.AllArgsConstructor;
-import org.catalogador.domains.Catalog;
+import org.catalogador.domains.entities.Catalog;
 import org.catalogador.services.interfaces.CatalogService;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;

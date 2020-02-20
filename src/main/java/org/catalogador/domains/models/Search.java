@@ -1,20 +1,38 @@
 package org.catalogador.domains.models;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import lombok.*;
 
-import java.util.List;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+        "Title",
+        "Year",
+        "imdbID",
+        "Type",
+        "Poster"
+})
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode
 public class Search {
 
-    public List<SearchItem> searchItems;
+    @JsonProperty("Title")
+    private String title;
 
-    public String totalResults;
+    @JsonProperty("Year")
+    private String year;
 
-    public String response;
+    @JsonProperty("imdbID")
+    private String imdbID;
 
+    @JsonProperty("Type")
+    private String type;
+
+    @JsonProperty("Poster")
+    private String poster;
 }

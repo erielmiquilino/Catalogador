@@ -1,22 +1,20 @@
 package org.catalogador.domains.models;
 
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 @EqualsAndHashCode
-public class SearchItem {
+public class Title {
 
     private String title;
 
     private String year;
 
-    private String imdbID;
-
-    private String type;
-
     private String poster;
+
+    private String imdbId;
 
 }

@@ -1,7 +1,7 @@
 package org.catalogador;
 
-import org.catalogador.domains.Catalog;
-import org.catalogador.domains.CatalogItem;
+import org.catalogador.domains.entities.Catalog;
+import org.catalogador.domains.entities.CatalogItem;
 import org.catalogador.handlers.CatalogHandler;
 import org.catalogador.routers.CatalogRouter;
 import org.catalogador.services.interfaces.CatalogService;

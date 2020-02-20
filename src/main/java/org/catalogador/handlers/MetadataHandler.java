@@ -1,7 +1,7 @@
 package org.catalogador.handlers;
 
 import lombok.AllArgsConstructor;
-import org.catalogador.domains.Catalog;
+import org.catalogador.domains.entities.Catalog;
 import org.catalogador.services.interfaces.MetadataService;
 import org.springframework.stereotype.Component;
 import org.springframework.web.reactive.function.server.ServerRequest;

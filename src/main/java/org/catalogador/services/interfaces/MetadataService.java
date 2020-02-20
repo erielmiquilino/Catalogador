@@ -1,10 +1,10 @@
 package org.catalogador.services.interfaces;
 
-import org.catalogador.domains.models.Search;
-import reactor.core.publisher.Mono;
+import org.catalogador.domains.models.Title;
+import reactor.core.publisher.Flux;
 
 public interface MetadataService {
 
-    Mono<Search> searchMetadata(String title);
+    Flux<Title> searchMetadata(String title);
 
 }

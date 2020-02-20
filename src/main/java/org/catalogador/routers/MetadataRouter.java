@@ -15,7 +15,7 @@ import static org.springframework.web.reactive.function.server.RequestPredicates
 public class MetadataRouter {
 
     @Bean
-    public RouterFunction<ServerResponse> composedRoutes(MetadataHandler handler) {
+    public RouterFunction<ServerResponse> composedMetadataRoutes(MetadataHandler handler) {
         return RouterFunctions
                 .route(GET("/metadata/search/{title}").and(accept(MediaType.APPLICATION_JSON)), handler::findByTitle);
     }

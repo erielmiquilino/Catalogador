@@ -1,4 +1,4 @@
-package org.catalogador.domains;
+package org.catalogador.domains.entities;
 
 import lombok.*;
 import org.catalogador.domains.enums.ItemType;
