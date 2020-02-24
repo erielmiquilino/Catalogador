@@ -3,7 +3,6 @@ package org.catalogador.mappers;
 import org.catalogador.domains.models.Search;
 import org.catalogador.domains.models.Title;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;
 import org.mapstruct.factory.Mappers;
 
@@ -14,7 +13,6 @@ public interface TitleMapper {
 
     TitleMapper map = Mappers.getMapper(TitleMapper.class);
 
-    @Mapping(source = "imdbID", target = "imdbId")
     Title searchToTitle (Search search);
 
     List<Title> searchesToTitles(List<Search> entity);

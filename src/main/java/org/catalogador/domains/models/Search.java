@@ -28,7 +28,7 @@ public class Search {
     private String year;
 
     @JsonProperty("imdbID")
-    private String imdbID;
+    private String imdbId;
 
     @JsonProperty("Type")
     private String type;

@@ -1,0 +1,25 @@
+version: '3'
+services:
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    ports:
+      - 27017:27017
+    networks:
+      - app-tier
+    restart: always
+
+  catalogador:
+    container_name: catalogador
+    image: catalogador
+    ports:
+      - 8080:8080
+    depends_on:
+      - mongodb
+    networks:
+      - app-tier
+    restart: always
+
+networks:
+  app-tier:
+    driver: bridge
