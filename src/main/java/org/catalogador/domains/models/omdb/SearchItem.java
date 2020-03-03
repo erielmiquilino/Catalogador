@@ -1,4 +1,4 @@
-package org.catalogador.domains.models;
+package org.catalogador.domains.models.omdb;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -19,7 +19,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-public class Search {
+public class SearchItem {
 
     @JsonProperty("Title")
     private String title;

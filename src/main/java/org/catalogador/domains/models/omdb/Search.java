@@ -1,4 +1,4 @@
-package org.catalogador.domains.models;
+package org.catalogador.domains.models.omdb;
 
 import com.fasterxml.jackson.annotation.*;
 import lombok.*;
@@ -16,15 +16,18 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode
-public class Result {
+public class Search {
 
     @JsonProperty("Search")
-    private List<Search> search = null;
+    private List<SearchItem> searchItems = null;
 
     @JsonProperty("totalResults")
     private String totalResults;
 
     @JsonProperty("Response")
     private String response;
+
+    @JsonProperty("Error")
+    private String error;
 
 }
