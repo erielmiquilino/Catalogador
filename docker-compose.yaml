@@ -11,7 +11,7 @@ services:
 
   catalogador:
     container_name: catalogador
-    image: catalogador
+    build: .
     ports:
       - 8080:8080
     depends_on:
