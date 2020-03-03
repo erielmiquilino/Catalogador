@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder(toBuilder = true)
-@EqualsAndHashCode(callSuper = false)
+@EqualsAndHashCode()
 public class CatalogItem {
 
     private String title;
